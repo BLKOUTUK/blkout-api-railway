@@ -53,6 +53,7 @@ app.use('/api/admin', require('./routes/admin'));
 app.use('/api/content', require('./routes/content'));
 app.use('/api/stories-real', require('./routes/stories-real'));
 app.use('/api/webhooks', require('./routes/webhooks'));
+app.use('/api/submit', require('./routes/submit'));
 
 // Root route
 app.get('/', (req, res) => {
