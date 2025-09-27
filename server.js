@@ -9,7 +9,7 @@ const morgan = require('morgan');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || process.env.RAILWAY_PORT || 3001;
 
 // Middleware
 app.use(helmet());
